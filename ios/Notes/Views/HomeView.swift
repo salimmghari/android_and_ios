@@ -2,7 +2,14 @@ import SwiftUI
 
 struct HomeView: View {
     @State private var notes: [Note] = []
-    @State private var newNote: Note
+    @State private var newNote: Note = Note(
+        id: 0,
+        title: "",
+        body: "",
+        user_id: 0,
+        created_at: "",
+        updated_at: ""
+    )
     @State private var showAuthView = false
     
     var body: some View {
@@ -11,37 +18,28 @@ struct HomeView: View {
                 title: "Notes"
             )
             ScrollView {
-//                ForEach(
-//                    self.notes,
-//                    id: \.self
-//                ) { note in
-//                    if let index = self.notes.firstIndex(of: note) {
-//                         AppNote(
-//                            title: "",
-//                            body_: "",
-//                            onTitleChange: { value in
-//                                self.notes[index] = nil
-//                            },
-//                            onBodyChange: { value in
-//                                self.notes[index] = nil
-//                            },
-//                            onUpdate: {},
-//                            onDelete: {}
-//                         )
-//                     }
-//                }
+                ForEach(self.notes) { note in
+                    AppNote(
+                        title: note.title,
+                        body_: note.body,
+                        onTitleChange: {value in},
+                        onBodyChange: {value in},
+                        onUpdate: {},
+                        onDelete: {}
+                    )
+                }
             }
             AppNote(
-               title: "",
-               body_: "",
-               onTitleChange: { value in
-//                   self.newNote = nil
-               },
-               onBodyChange: { value in
-//                   self.newNote = value
-               },
-               onCreate: {},
-               isNew: true
+                title: self.newNote.title,
+                body_: self.newNote.body,
+                onTitleChange: { value in
+                    self.newNote.title = value
+                },
+                onBodyChange: { value in
+                    self.newNote.body = value
+                },
+                onCreate: {},
+                isNew: true
             )
         }
             .padding()
@@ -58,6 +56,6 @@ struct HomeView: View {
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView(newNote: <#Note#>)
+        HomeView()
     }
 }
