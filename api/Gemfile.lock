@@ -106,7 +106,7 @@ GEM
       activesupport (>= 6.1)
     i18n (1.14.6)
       concurrent-ruby (~> 1.0)
-    importmap-rails (2.0.1)
+    importmap-rails (2.0.2)
       actionpack (>= 6.0.0)
       activesupport (>= 6.0.0)
       railties (>= 6.0.0)
@@ -131,7 +131,7 @@ GEM
     matrix (0.4.2)
     mini_mime (1.1.5)
     minitest (5.25.1)
-    msgpack (1.7.2)
+    msgpack (1.7.3)
     mutex_m (0.2.0)
     net-imap (0.4.16)
       date
@@ -276,7 +276,7 @@ DEPENDENCIES
   web-console
 
 RUBY VERSION
-   ruby 3.2.3p157
+   ruby 3.3.5p100
 
 BUNDLED WITH
    2.5.20
