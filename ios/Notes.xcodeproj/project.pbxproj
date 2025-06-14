@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		CE6FC8FE2B5EBED3001D5CD3 /* NotesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6FC8FD2B5EBED3001D5CD3 /* NotesApp.swift */; };
 		CE6FC9022B5EBED8001D5CD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE6FC9012B5EBED8001D5CD3 /* Assets.xcassets */; };
-		CE6FC9052B5EBED8001D5CD3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE6FC9042B5EBED8001D5CD3 /* Preview Assets.xcassets */; };
 		CEF61D6B2B6075380037440D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF61D6A2B6075380037440D /* HomeView.swift */; };
 		CEF61D6D2B6075440037440D /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF61D6C2B6075440037440D /* AuthView.swift */; };
 		CEF61D6F2B6075540037440D /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF61D6E2B6075540037440D /* UserManager.swift */; };
@@ -27,7 +26,6 @@
 		CE6FC8FA2B5EBED3001D5CD3 /* Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE6FC8FD2B5EBED3001D5CD3 /* NotesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesApp.swift; sourceTree = "<group>"; };
 		CE6FC9012B5EBED8001D5CD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CE6FC9042B5EBED8001D5CD3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CEF61D6A2B6075380037440D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		CEF61D6C2B6075440037440D /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
 		CEF61D6E2B6075540037440D /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
@@ -76,17 +74,8 @@
 				CEF61D672B6075150037440D /* Components */,
 				CE6FC8FD2B5EBED3001D5CD3 /* NotesApp.swift */,
 				CE6FC9012B5EBED8001D5CD3 /* Assets.xcassets */,
-				CE6FC9032B5EBED8001D5CD3 /* Preview Content */,
 			);
 			path = Notes;
-			sourceTree = "<group>";
-		};
-		CE6FC9032B5EBED8001D5CD3 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				CE6FC9042B5EBED8001D5CD3 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		CEF61D672B6075150037440D /* Components */ = {
@@ -149,7 +138,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1420;
-				LastUpgradeCheck = 1420;
+				LastUpgradeCheck = 1620;
 				TargetAttributes = {
 					CE6FC8F92B5EBED3001D5CD3 = {
 						CreatedOnToolsVersion = 14.2;
@@ -179,7 +168,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE6FC9052B5EBED8001D5CD3 /* Preview Assets.xcassets in Resources */,
 				CE6FC9022B5EBED8001D5CD3 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -245,6 +233,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -305,6 +294,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;

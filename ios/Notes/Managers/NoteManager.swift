@@ -1,13 +1,13 @@
-//import Foundation
+import Foundation
 //
-//struct Note: Codable, Identifiable, Hashable {
-//    var id: Int
-//    var title: String
-//    var body: String
-//    var user_id: Int
-//    var created_at: String
-//    var updated_at: String
-//}
+struct Note: Codable, Identifiable, Hashable {
+    var id: Int
+    var title: String
+    var body: String
+    var user_id: Int
+    var created_at: String
+    var updated_at: String
+}
 //
 //class NoteManager {
 //    func createNote() -> Void {}
