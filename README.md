@@ -41,7 +41,7 @@ Developed by Salim Mghari
 
 Proprietary License
 
-Salim Mghari 2024
+Salim Mghari 2026
 
 ---
 
