@@ -9,10 +9,10 @@ Technologies:
 - Swift
 - SwiftUI
 - Alamofire
-- Ruby
-- Rails
 - SQL
 - SQLite
+- Ruby
+- Rails
 - JSON
 - Git
 
