@@ -1,6 +1,6 @@
 # Project Android & iOS
 
-Mobile software
+Mobile application
 
 Technologies:
 - Kotlin
